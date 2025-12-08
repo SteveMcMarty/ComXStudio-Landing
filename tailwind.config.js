@@ -14,6 +14,12 @@ export default {
         danger: '#ef4444',
         warning: '#f59e0b',
       },
+      fontFamily: {
+        comic: ['Bangers', 'system-ui', 'cursive'],
+      },
+      boxShadow: {
+        comic: '4px 4px 0px 0px #000000',
+      },
     },
   },
   plugins: [],

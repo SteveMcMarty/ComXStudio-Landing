@@ -1,8 +1,8 @@
 
 
 function VideoSection(): JSX.Element {
-    // Placeholder video ID - can be replaced by the user
-    const VIDEO_ID = "dQw4w9WgXcQ";
+    // Placeholder video replaced by static image until official demo is ready
+    // const VIDEO_ID = "dQw4w9WgXcQ";
 
     return (
         <section className="bg-yellow-400 py-20 px-4 border-y-4 border-black relative overflow-hidden">
@@ -17,14 +17,17 @@ function VideoSection(): JSX.Element {
                 <div className="relative w-full max-w-4xl mx-auto">
                     {/* Comic Frame for Video */}
                     <div className="bg-black p-2 md:p-4 shadow-[8px_8px_0_#000] transform rotate-1">
-                        <div className="relative pb-[56.25%] h-0 bg-gray-900 border-4 border-white">
-                            <iframe
-                                className="absolute top-0 left-0 w-full h-full"
-                                src={`https://www.youtube.com/embed/${VIDEO_ID}`}
-                                title="ComXStudio Demo"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
+                        <div className="absolute inset-0 w-full h-full bg-slate-900 group cursor-pointer relative overflow-hidden">
+                            <img
+                                src="/video-placeholder.png"
+                                alt="Aperçu de l'interface ComXStudio"
+                                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all">
+                                <div className="bg-primary/90 text-white p-4 items-center gap-3 border-4 border-black shadow-comic transform transition-transform group-hover:scale-110 flex cursor-not-allowed">
+                                    <span className="text-2xl font-bold font-comic">DÉMO BIENTÔT DISPONIBLE</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
